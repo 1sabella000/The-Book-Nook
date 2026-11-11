@@ -1,0 +1,229 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #ffd5c2;
+	font-family: sans-serif;
+}
+
+.chewy-regular {
+	font-family: "Chewy", system-ui;
+	font-weight: 400;
+}
+
+header {
+	text-align: center;
+}
+
+header img {
+	width: 100%;
+	height: 150px;
+	object-fit: cover;
+	opacity: 0.6;
+}
+
+#title {
+	text-align: center;
+	font-size: 2rem;
+	border: 4px solid #588b8b;
+	color: #c8553d;
+	max-width: 500px;
+	padding: 10px 25px 20px 23px;
+	margin: 10px auto;
+}
+
+.navbar ul {
+	list-style-type: none;
+	background-color: #c8553d;
+	display: flex;
+	justify-content: center;
+	padding: 10px 0;
+}
+
+.navbar a {
+	color: whitesmoke;
+	text-decoration: none;
+	padding: 0 10px;
+	font-size: 1rem;
+}
+
+.navbar a:hover {
+	background-color: #ffffff;
+	color: black;
+}
+
+h2 {
+	background-color: #588b8b;
+	color: white;
+	text-align: center;
+	padding: 20px 10px;
+	font-size: 1.5rem;
+}
+
+/* Two panels: stacked on phones, side by side on larger screens */
+.tworow {
+	background-color: #ffffff;
+}
+
+.panel {
+	background-color: #ffd5c2;
+	margin: 10px;
+	text-align: center;
+}
+
+.panel p {
+	padding: 20px;
+	font-size: 1.1rem;
+}
+
+.buttonrow {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+.button {
+	background-color: #c8553d;
+	color: white;
+	text-decoration: none;
+	padding: 12px 24px;
+	font-size: 1.1rem;
+}
+
+.button:hover {
+	background-color: #f28f3b;
+	color: black;
+}
+
+/* Three cards: stacked on phones, in a row on larger screens */
+.threecol {
+	margin: 10px;
+}
+
+.col {
+	margin-bottom: 20px;
+}
+
+.card {
+	background-color: #f28f3b;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+
+.card p {
+	font-size: 1.4rem;
+	padding: 20px 10px 10px 10px;
+	text-align: center;
+}
+
+.label {
+	background-color: #c8553d;
+	color: white;
+	padding: 5px 10px;
+}
+
+.strip {
+	background-color: #ffffff;
+	margin-bottom: 10px;
+	text-align: center;
+	padding: 10px;
+}
+
+.strip p {
+	padding: 10px;
+}
+
+.squares {
+	display: flex;
+	justify-content: space-between;
+}
+
+.square {
+	background-color: #588b8b;
+	width: 48%;
+	padding: 15px 10px;
+	text-align: center;
+}
+
+.linkrow {
+	display: flex;
+	justify-content: space-between;
+	margin: 10px;
+}
+
+.linkrow a {
+	background-color: #f28f3b;
+	color: black;
+	text-decoration: none;
+	text-align: center;
+	width: 49%;
+	padding: 20px 5px;
+	font-size: 1rem;
+}
+
+.linkrow a:hover {
+	background-color: #588b8b;
+}
+
+footer {
+	background-color: #c8553d;
+	color: whitesmoke;
+	text-align: center;
+	padding: 40px 10px;
+	margin-top: 10px;
+}
+
+/* Tablets and larger */
+@media (min-width: 768px) {
+	header img {
+		height: 250px;
+	}
+
+	#title {
+		font-size: 3rem;
+	}
+
+	.navbar a {
+		padding: 0 20px;
+		font-size: 1.5rem;
+	}
+
+	h2 {
+		font-size: 1.8rem;
+	}
+
+	.tworow {
+		display: flex;
+	}
+
+	.panel {
+		width: 50%;
+	}
+
+	.threecol {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.col {
+		width: 32%;
+	}
+
+	.linkrow a {
+		font-size: 1.3rem;
+	}
+
+	footer p {
+		font-size: 1.5rem;
+	}
+}
+
+
+@media (min-width: 1200px) {
+	header img {
+		height: 350px;
+	}
+}
